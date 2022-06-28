@@ -1,0 +1,26 @@
+.sign-up-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.sign-up-section .form-card{
+    padding: 30px;
+    width: 500px;
+}
+
+.sign-up-section .sign-up-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.sign-up-section .sign-up-form .rem-for{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}

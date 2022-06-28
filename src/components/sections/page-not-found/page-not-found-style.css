@@ -1,0 +1,24 @@
+.big-title{
+    font-size: 150px;
+    color: #333;
+}
+
+.not-found-section{
+    padding: 100px 50px;
+}
+
+
+@media (max-width: 995px) {
+    .big-title{
+        font-size: 100px;
+    }
+
+    .not-found-section{
+        padding: 70px 10px;
+    }
+}
+
+
+.not-found-error-body{
+    color: #646a7c;
+}

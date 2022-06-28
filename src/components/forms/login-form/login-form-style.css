@@ -1,0 +1,27 @@
+.sign-in-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.sign-in-section .form-card{
+    padding: 30px;
+    width: 500px;
+    height: 430px;
+}
+
+.sign-in-section .sign-in-form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.sign-in-section .sign-in-form .rem-for{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

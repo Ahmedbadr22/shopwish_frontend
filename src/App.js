@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import {Routes, Route} from "react-router-dom";
+import Home from "./pages/Home";
+import ProductDetails from "./pages/ProductDetails";
+import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
+import ContactUs from "./pages/ContactUs";
+import PageNotFound from "./pages/PageNotFound";
+import Wishlist from "./pages/Wishlist";
+import NavHeader from "./components/navigations/nav-header/NavHeader";
+import Navbar from "./components/navigations/navbar/Navbar";
+import Footer from "./components/navigations/footer/Footer";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+            <NavHeader/>
+            <Navbar />
+            <Routes>
+                <Route exact path="/" element={<Home/>}/>
+                <Route path="/product-detail" element={<ProductDetails/>}/>
+                <Route exact path="/sign-in" element={<SignIn/>}/>
+                <Route exact path="/sign-up" element={<SignUp/>}/>
+                <Route exact path="/contact-us" element={<ContactUs/>}/>
+                <Route exact path="/page-not-found" element={<PageNotFound/>}/>
+                <Route exact path="/wishlist" element={<Wishlist/>}/>
+            </Routes>
+            <Footer />
+        </>
+    );
 }
 
 export default App;

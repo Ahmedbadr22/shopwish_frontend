@@ -1,0 +1,33 @@
+.subscribe-section .subscribe-content{
+    padding: 50px 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.subscribe-section .join-text{
+    font-size: 35px;
+    color: white;
+}
+
+@media (max-width: 995px) {
+    .subscribe-section .subscribe-content{
+        padding: 20px 10px;
+        gap: 10px;
+    }
+
+    .subscribe-content .join-text{
+        font-size: 30px;
+    }
+}
+
+.subscribe-section .signup-btn{
+    height: 100%;
+    width: 200px;
+}
+
+.subscribe-content .or-text{
+    color: white;
+}
