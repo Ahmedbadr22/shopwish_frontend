@@ -1,8 +1,9 @@
 import "./login-form-style.css";
 import {Button, Checkbox, FormControlLabel, TextField} from "@mui/material";
+import {useNavigate} from "react-router-dom";
 
 const LoginForm = () => {
-
+    const navigateTo = useNavigate();
 
     return (
         <div className="sign-in-section">
@@ -51,8 +52,8 @@ const LoginForm = () => {
                     Don't Have Account?
                     <span>
                         <Button
-                            href='/'
                             variant="text"
+                            onClick={() => navigateTo('/sign-up')}
                         >
                             Register
                         </Button>

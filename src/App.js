@@ -17,11 +17,11 @@ function App() {
             <Navbar />
             <Routes>
                 <Route exact path="/" element={<Home/>}/>
-                <Route path="/product-detail" element={<ProductDetails/>}/>
+                <Route path="/product-detail/:id" element={<ProductDetails/>}/>
                 <Route exact path="/sign-in" element={<SignIn/>}/>
                 <Route exact path="/sign-up" element={<SignUp/>}/>
                 <Route exact path="/contact-us" element={<ContactUs/>}/>
-                <Route exact path="/page-not-found" element={<PageNotFound/>}/>
+                <Route path="*" element={<PageNotFound/>}/>
                 <Route exact path="/wishlist" element={<Wishlist/>}/>
             </Routes>
             <Footer />

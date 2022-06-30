@@ -1,0 +1,97 @@
+.landing-carousel .item{
+    background-position: center center;
+    background-size: cover;
+    height: 500px;
+}
+
+@media only screen and (max-width: 1199px){
+    .landing-carousel .item{
+        height: 500px;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .landing-carousel .item{
+        background-position: center center;
+        background-size: cover;
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .landing-carousel .item{
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 575px){
+    .landing-carousel .item{
+        height: 350px;
+    }
+}
+.caption-header-text{
+    font-size: 16px;
+}
+
+.caption-title-text{
+    font-size: 60px;
+}
+
+@media only screen and (max-width: 1199px){
+    .caption-title-text {
+        font-size: 60px;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .caption-title-text {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .caption-title-text {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 575px){
+    .caption-title-text {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+}
+
+.carousel-content{
+    max-width: 40%;
+    left: 10%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+@media (max-width: 995px){
+    .carousel-content{
+        max-width: 70%;
+    }
+}
+
+.caption-des{
+    color: #646a7c;
+    font-size: 14px;
+    margin-bottom: 20px;    
+}
+
+
+.swiper-button-next,
+.swiper-button-prev{
+    color: var(--red-color) !important;
+}
+
+.landing-carousel .swiper-pagination-bullet-active{
+    background-color: var(--red-color) !important;
+}

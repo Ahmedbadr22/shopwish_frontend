@@ -1,7 +1,9 @@
 import "./page-not-found-style.css";
 import {Button} from "@mui/material";
+import {useNavigate} from "react-router-dom";
 
 const PageNotFoundSection = () => {
+    const navigateTo = useNavigate();
     return (
         <div className="not-found-section text-center">
             <h1 className="big-title">404</h1>
@@ -14,6 +16,7 @@ const PageNotFoundSection = () => {
                 variant="contained"
                 color="primary"
                 size={"large"}
+                onClick={() => navigateTo('/')}
             >
                 Back To Home
             </Button>

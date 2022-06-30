@@ -2,7 +2,7 @@ import "./contact-us-section-style.css";
 import {Button, TextField} from "@mui/material";
 import {Facebook, Linkedin, Twitter, Youtube, GeoAlt, Envelope, Phone} from "react-bootstrap-icons";
 import {useContext} from "react";
-import MainThemeContext, {mainThemeContext} from "../../../context/main-theme-context/MainThemeContext";
+import {mainThemeContext} from "../../../context/main-theme-context/MainThemeContext";
 
 const ContactUsSection = () => {
     const {primaryMain} = useContext(mainThemeContext);

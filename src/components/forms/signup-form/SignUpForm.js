@@ -1,8 +1,9 @@
 import {Button, Checkbox, FormControlLabel, TextField} from "@mui/material";
 import "./signup-form-style.css";
+import {useNavigate} from "react-router-dom";
 
 const SignUpForm = () => {
-
+    const navigateTo = useNavigate();
 
     return (
         <div className="sign-up-section">
@@ -78,8 +79,8 @@ const SignUpForm = () => {
                     I have an account ?
                     <span>
                         <Button
-                            href='/'
                             variant="text"
+                            onClick={() => navigateTo('/sign-in')}
                         >
                             Login
                         </Button>

@@ -1,0 +1,25 @@
+.our-service-section{
+    padding: 50px;
+}
+
+.service-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-text{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.service-item{
+    border: 1px solid #ddd;
+    padding: 15px;
+}
+
+.service-icon{
+    color: var(--red-color);
+}

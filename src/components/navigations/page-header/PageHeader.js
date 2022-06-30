@@ -1,8 +1,10 @@
 import React from 'react';
-import {Breadcrumbs} from "@mui/material";
+import {Breadcrumbs, Button} from "@mui/material";
 import "./page-header-style.css";
+import {useNavigate} from "react-router-dom";
 
 const PageHeader = ({sectionTitle}) => {
+    const navigateTo = useNavigate();
     return (
         <div className="page-header">
             <div className="container">
@@ -15,7 +17,13 @@ const PageHeader = ({sectionTitle}) => {
                             separator="/"
                             aria-label="breadcrumb"
                         >
-                            <a className="breadcrumb-link" href="/">Home</a>
+                            <Button
+                                variant={"text"}
+                                className="breadcrumb-link"
+                                onClick={() => navigateTo('/')}
+                            >
+                                Home
+                            </Button>
                             <span>{sectionTitle}</span>
                         </Breadcrumbs>
                     </div>
